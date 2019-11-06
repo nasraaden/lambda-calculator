@@ -6,6 +6,49 @@
     border: 2px solid grey;
     padding-bottom: 25px;
 }
+
+.number{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.number button{
+    background: rgb(30, 45, 110);
+}
+
+.operator{
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+
+.operator button{
+    background: rgb(35, 156, 212);
+}
+
+.special button{
+    background: rgb(33, 100, 189);
+}
+
+.left{
+    width: 60%;
+}
+
+.number button:nth-child(10){
+    width: 200px;
+}
+
+button { 
+    border-radius: 50px;
+    margin: 0 20px 20px 0;
+    color: white;
+    height: 90px;
+    width: 90px;
+    font-size: 2rem;
+    box-shadow: 0 3px 3px black;
+}
+
 .display {
     margin-top: 25px;
     height: 100px;
@@ -18,5 +61,16 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding-right: 8%;
-    font-size: 5.0rem;
+    margin-left: 4.5%;
+    font-size: 5em;
   }
+
+  .App {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    margin-top: 25px;
+    padding: 0;
+}
